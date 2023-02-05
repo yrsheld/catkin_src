@@ -1,0 +1,3 @@
+<launch>
+	<include file="turtlebot_rviz_launchers/launch/view_navigation.launch" />
+</launch>
