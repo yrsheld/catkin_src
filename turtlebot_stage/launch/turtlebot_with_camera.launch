@@ -1,4 +1,5 @@
 <launch>
 	<include file="$(find turtlebot_stage)/launch/turtlebot_in_stage.launch" />
 	<include file="$(find rviz_camera_stream)/launch/demo.launch" />
+        <include file="$(find rviz_camera_stream)/launch/aruco_image.launch" />
 </launch>

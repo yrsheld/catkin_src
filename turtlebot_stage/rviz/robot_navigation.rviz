@@ -30,7 +30,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan (kinect)
+    SyncSource: Image1
 Toolbars:
   toolButtonStyle: 2
 Visualization Manager:
@@ -317,7 +317,9 @@ Visualization Manager:
           Value: false
         pole_top_3_link:
           Value: false
-        quad:
+        quad1:
+          Value: false
+        quad2:
           Value: false
         wheel_left_link:
           Value: false
@@ -403,7 +405,9 @@ Visualization Manager:
                   {}
                 wheel_right_link:
                   {}
-          quad:
+          quad1:
+            {}
+          quad2:
             {}
       Update Interval: 0
       Value: true
@@ -676,7 +680,7 @@ Visualization Manager:
       Axes Radius: 0.100000001
       Class: rviz/Pose
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.200000003
       Head Radius: 0.100000001
       Name: Pose (move_base)
@@ -685,7 +689,7 @@ Visualization Manager:
       Shape: Arrow
       Topic: /move_base/current_goal
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.200000003
       Axes Length: 0.300000012
@@ -815,15 +819,22 @@ Visualization Manager:
       Name: Image1
       Normalize Range: true
       Queue Size: 2
-      Transport Hint: raw
+      Transport Hint: compressed
       Unreliable: false
       Value: true
     - Class: rviz_textured_quads/MeshDisplayCustom
       Enabled: true
-      Image Topic: /image
+      Image Topic: /quad1_img/image_raw
       Meters per pixel: 0.00200000009
       Name: MeshDisplayCustom
-      Quad Frame: quad
+      Quad Frame: quad1
+      Value: true
+    - Class: rviz_textured_quads/MeshDisplayCustom
+      Enabled: true
+      Image Topic: /quad2_img/image_raw
+      Meters per pixel: 0.00200000009
+      Name: MeshDisplayCustom
+      Quad Frame: quad2
       Value: true
   Enabled: true
   Global Options:

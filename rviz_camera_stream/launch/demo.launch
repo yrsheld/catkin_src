@@ -17,10 +17,10 @@
 
   <!-- publish quad at target position -->
   <node pkg="tf2_ros" type="static_transform_publisher" name="quad1"
-      args="3 3 0 0 0 0 map quad1" />
+      args="0.5 0.5 0 3.14 0 0 map quad1" />
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="quad2"
-      args="5 5 0 0 0 0 map quad2" />
+      args="0.9 0.9 0 3.14 0 0 map quad2" />
 
   <group ns="camera1">
   <node pkg="tf2_ros" type="static_transform_publisher" name="camera1"
